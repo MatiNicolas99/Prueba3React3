@@ -1,0 +1,80 @@
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card img {
+    transition: all 0.15s linear;
+}
+
+.profile-card .profile-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0) 50%);
+    transition: all 0.15s linear;
+}
+.profile-card .profile-name-p {
+    color: rgb(46, 158, 158);
+}
+.profile-card .profile-position {
+    position: relative;
+    color: rgba(255, 255, 255, 0.4);
+    left: 30px;
+    top: 100px;
+    transition: all 0.15s linear;
+}
+
+.profile-card .profile-overview {
+    font-size: 8px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 20px 0px;
+    transition: all 0.15s linear;
+}
+.profile-card .profile-overview .profile-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.profile-card .profile-overview h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.profile-card .profile-overview p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card:hover img {
+    filter: brightness(80%);
+}
+
+.profile-card:hover .profile-name {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.profile-card:hover .profile-position {
+    left: 40px;
+}
+
+.profile-card:hover .profile-overview {
+    padding-bottom: 25px;
+}

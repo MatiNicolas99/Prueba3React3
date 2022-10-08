@@ -1,0 +1,15 @@
+.active {
+    color: red;
+    text-decoration: none ;
+    padding-right: 20px;
+}
+
+.no-active {
+    color: white;
+    text-decoration: none ;
+    padding-right: 20px;
+}
+
+.no-active:hover {
+    color: red;
+}
